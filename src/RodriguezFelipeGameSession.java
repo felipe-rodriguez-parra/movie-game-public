@@ -1,6 +1,6 @@
 import java.util.*;
 
-class GameSession {
+class RodriguezFelipeGameSession {
     private final String movie;
     private final int maxAttempts;
     private int attempts;
@@ -10,7 +10,7 @@ class GameSession {
     private final Set<Character> incorrectLetters;
     private final Scanner scanner;
 
-    public GameSession(String movie, int maxAttempts, String nickname) {
+    public RodriguezFelipeGameSession(String movie, int maxAttempts, String nickname) {
         this.movie = movie;
         this.maxAttempts = maxAttempts;
         this.attempts = maxAttempts;

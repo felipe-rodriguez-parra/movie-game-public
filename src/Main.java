@@ -6,7 +6,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ingrese su nickname: ");
         String nickname = scanner.nextLine().trim();
-        GuessTheMovie.startGame(nickname);
+        RodriguezFelipeGuessTheMovie.startGame(nickname);
         scanner.close();
     }
 }

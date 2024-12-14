@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class GuessTheMovie {
+public class RodriguezFelipeGuessTheMovie {
     private static final int MAX_ATTEMPTS = 10;
     private static final String MOVIES_FILE = new File(System.getProperty("user.dir") + File.separator + "src", "movies.txt").getPath();
     private static final String SCORES_FILE = new File(System.getProperty("user.dir") + File.separator + "src", "ranking.dat").getPath();
@@ -31,12 +31,12 @@ public class GuessTheMovie {
     }
 
     private static void playGame(String movie, String nickname) throws IOException {
-        GameSession session = new GameSession(movie, MAX_ATTEMPTS, nickname);
+        RodriguezFelipeGameSession session = new RodriguezFelipeGameSession(movie, MAX_ATTEMPTS, nickname);
         session.start();
         endGame(session);
     }
 
-    private static void endGame(GameSession session) throws IOException {
+    private static void endGame(RodriguezFelipeGameSession session) throws IOException {
         System.out.println("\nEl título era: " + session.getMovie());
         System.out.println("Puntuación final: " + session.getScore());
         if (session.getScore() > 0) {
